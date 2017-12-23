@@ -7,7 +7,7 @@ class Clock {
 
     displayClock() {
         setInterval(function(){
-            $('#clock').html(moment().format('H:mm:ss'));
+            $('#clock').html(moment().format('h:mm A'));
         }, 1000);
     }
 

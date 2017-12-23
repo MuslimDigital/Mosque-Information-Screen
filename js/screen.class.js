@@ -8,7 +8,15 @@
 class Screen {
 
     constructor() {
-        this.toggleFullscreen(document.documentElement);
+        this.initToggleScreenBtn();
+    }
+
+    initToggleScreenBtn() {
+        var _this = this;
+        $('#toggleFullScreen').on('click', function(event, target){
+            _this.toggleFullscreen(document.documentElement);
+            target.hide();
+        });
     }
 
     toggleFullscreen(element) {
