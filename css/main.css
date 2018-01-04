@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 1000px;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
 #logo {
@@ -19,13 +20,37 @@ body {
     filter: brightness(0) invert(1);
 }
 
-#clock {
+.datetime {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 220px;
     padding: 15px;
-    font-size: 3em;
     background-color: white;
     float: left;
     font-weight: 900;
+}
+
+#clock {
+    font-size: 3em;
+    min-height: 60px;
+    color: #380412;
+}
+
+#dayOfTheWeek {
+    float: left;
+    clear: left;
+}
+
+#date {
+    float: left;
+    clear: left;
+}
+
+#islamicDate {
+    float: left;
+    clear: left;
+}
+
+#dayOfTheWeek, #date, #islamicDate {
+    font-size: 3em;
 }
