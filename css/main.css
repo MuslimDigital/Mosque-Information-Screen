@@ -15,19 +15,38 @@
 
 body {
     background: linear-gradient(to left, #52071e 50%, #380412 50%);
-    width: 100%;
-    height: 1000px;
+    width: 100vw;
+    height:100vh;
     font-family: 'MyriadProRegular';
     color: #fff;
+    margin: 0;
+    padding: 50px;
 }
 
 #logo {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    padding: 14px;
-    padding-left: 0px;
     filter: brightness(0) invert(1);
+    left: 50%;
+    position: absolute;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.text-info {
+    font-size: 50px;
+}
+
+.donation-text {
+    clear: both;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 3em;
 }
 
 .datetime {
@@ -63,4 +82,37 @@ body {
 
 #dayOfTheWeek, #date, #islamicDate {
     font-size: 3em;
+}
+
+.daily-prayer-times {
+    font-size: 2em;
+    text-align: right;
+    margin: 0px auto;
+}
+
+.daily-prayer-times th {
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+.daily-prayer-times td,  .daily-prayer-times th {
+    margin: 100px;
+}
+
+.daily-prayer-times th:first-child {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.daily-prayer-times .mithl-text {
+    font-size: 0.5em;
+    max-width: 50px;
+}
+
+.daily-prayer-times td {
+    min-width: 100px;
+}
+
+.daily-prayer-times td:last-child {
+    font-weight: bolder;
 }

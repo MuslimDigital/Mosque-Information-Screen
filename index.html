@@ -6,23 +6,87 @@
     <title>Mosque Information Screen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.min.css" />
 </head>
 <body>
-    <div class="datetime">
-        <div id="clock"></div>
-    </div>
-    <div id="dayOfTheWeek"></div>
-    <div id="date"></div>
-    <div id="islamicDate"></div>
+    <div class="row">
+
     
-    <div id="logo">
-        <img src="./images/elm_logo.png" alt="logo">
+        <div class="col-6 section-time-and-notices">
+            <div class="datetime">
+                <div id="clock"></div>
+            </div>
+            <div id="dayOfTheWeek"></div>
+            <div id="date"></div>
+            <div id="islamicDate"></div>
+
+            <div class="donation-text">
+                <p class="italic">You can donate by texting</p>
+                <p class="bold text-info">ELMT12 &pound;5 to 70070</p>
+                <p class="italic">or &pound;1, &pound;2, &pound;3, &pound;4 or &pound;10</p>
+            </div>
+            
+        </div>
+        <!-- <div id="logo">
+            <img src="./images/elm_logo.png" alt="logo">
+        </div> -->
+        <div class="col-6 section-prayer-times">
+            <table class="daily-prayer-times">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Begins</th>
+                        <th>Jama'ah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Fajr</th>
+                        <td></td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                    <tr>
+                        <th>Zuhr</th>
+                        <td></td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">'Asr</th>
+                        <td class="mithl-text">mithl 1</td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                    <tr>
+                        <td class="mithl-text">mithl 2</td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                    <tr>
+                        <th>Magrib</th>
+                        <td></td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                    <tr>
+                        <th>Isha</th>
+                        <td></td>
+                        <td>0:00</td>
+                        <td>0:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    
     
     
 
 
-    <!-- <button id="toggleFullScreen">Start</button> -->
+    <button id="toggleFullScreen">Start</button>
 
     <script src="./js/lib/jquery.js"></script>
     <script src="./js/lib/moment.js"></script>
