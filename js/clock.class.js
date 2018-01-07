@@ -7,9 +7,15 @@ class Clock {
     }
 
     displayClock() {
+        var _this = this;
+        this.updateClock();
         setInterval(function(){
-            $('#clock').html(moment().format('h:mm A'));
+            _this.updateClock();
         }, 1000);
+    }
+
+    updateClock() {
+        $('#clock').html(moment().format('h:mm A'));
     }
 
     displayDate() {
